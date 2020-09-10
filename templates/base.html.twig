@@ -8,41 +8,37 @@
 
         <title>Portfolio - {% block title %}base{% endblock %}</title>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ asset('css/styleAdmin.css') }}"> {# asset pour viser le dossier "public" #}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}"> {# asset pour viser le dossier "public" #}
 
         {% block stylesheets %}{% endblock %}
     </head>
 
-    <body>
+    <body class="animate__animated animate__fadeIn" data-spy="scroll" data-target="#mainNav" data-offset="60">
 
-        <section class="py-5 header text-center">
+        <section id="top" class="py-5 header text-center">
             <div class="container py-5 text-white">
                 <header class="test py-5">
-                    <h1 class="display-4">Bootstrap sticky navbar</h1>
-                    <p class="font-italic mb-1">Create a sticky top navbar using Bootstrap 4 utility classes.</p>
-                    <p class="font-italic">Snippet by
-                        <a class="text-white" href="https://bootstrapious.com/">
-                            <u>Bootstrapious</u>
-                        </a>
-                    </p>
+                    <h1 class="display-4">Stephen GERMAIN</h1>
+                    <p class="font-italic mb-1">Développeur Web et Web Mobile</p>
                 </header>
             </div>
         </section>
 
         <!-- Sticky navbar-->
         <header class="header sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-                <div class="container"><a class="navbar-brand" href="#">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm id="mainNav"">
+                <div class="container"><a class="navbar-brand" href="#top">
                     <strong class="h6 mb-0 font-weight-bold text-uppercase">Portfolio</strong></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">A propos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#top">Accueil <span class="sr-only">(current)</span></a></li>
+                            <li class="test nav-item"><a class="nav-link" href="#about">A propos</a></li>
+                            <li class="test nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                            <li class="test nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                            <li class="test nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -70,24 +66,29 @@
                         <h5 class="text-uppercase">Links</h5>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#!">A propos</a>
+                                <a href="#about">A propos</a>
                             </li>
                             <li>
-                                <a href="#!">Compétences</a>
+                                <a href="#skills">Compétences</a>
                             </li>
                             <li>
-                                <a href="#!">Projets</a>
+                                <a href="#projects">Projets</a>
                             </li>
                             <li>
-                                <a href="#!">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
   
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <p>Stephen Germain</p>
+            <div class="footer-copyright text-center py-3">
+                <a href="#top">
+                    <svg class="chevronUp" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                    </svg>
+                </a>
+                <p>© 2020 Copyright Stephen GERMAIN</p>
             </div>
         </footer>
 
