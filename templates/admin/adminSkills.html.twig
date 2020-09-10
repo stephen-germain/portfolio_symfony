@@ -1,14 +1,81 @@
 {% extends 'baseAdmin.html.twig' %}
 
-{% block title %}Hello AdminSkillController!{% endblock %}
+{% block title %}Compétences{% endblock %}
 
 {% block body %}
 
-    <div class="example-wrapper">
-        <h1>Liste des compétences</h1>
+    <div class="container">
+       <div class="row py-5">
+            <div class="example-wrapper">
+                <h3>Liste des compétences</h3>
+            </div>
+        </div>
 
-       
-       
+        {% for skill in skills %}
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>langages</h4>
+                    <table class="table table-bordered table-hover table-sm text-center">
+                        <thead>
+                            <tr>
+                                <th>compétence</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{skill.nom}}</td>
+                                <td>
+                                    <a href="#">modifier</a>
+                                    <a href="#">supprimer</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <h4>frameworks</h4>
+                    <table class="table table-bordered table-hover table-sm text-center">
+                        <thead>
+                            <tr>
+                                <th>compétence</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{skill.framework}}</td>
+                                <td>
+                                    <a href="#">modifier</a>
+                                    <a href="#">supprimer</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <h4>cms</h4>
+                    <table class="table table-bordered table-hover table-sm text-center">
+                        <thead>
+                            <tr>
+                                <th>compétence</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{skill.cms}}</td>
+                                <td>
+                                    <a href="#">modifier</a>
+                                    <a href="#">supprimer</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        {% endfor %}
+        <a href="{{ path('skills_create') }}" class="btn btn-outline-dark float-right">Ajouter</a>
     </div>
 
 {% endblock %}
