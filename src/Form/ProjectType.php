@@ -30,6 +30,7 @@ class ProjectType extends AbstractType
             ])
             ->add('img', FileType::class, [
                 'required' => true,
+                'mapped' => false,
                 'label' => 'Image du site',
                 'attr' => [
                     'placeholder' => 'ex.: photo.png'

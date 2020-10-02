@@ -65,6 +65,23 @@
                     <div class="divider"></div>
                     <p class="text-muted lead pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
                 </div>
+                <div class="row p-5">
+                    {% for project in projects %}
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <a href="{{ project.url }}"> 
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="{{ asset('img/images/' ~ project.img) }}" class="card-img-top" alt="projets">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ project.title}}</h5>
+                                            <p class="card-text">{{ project.text }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>  
             </div>
         </div>
     </section>

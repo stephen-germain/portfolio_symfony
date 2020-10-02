@@ -28,8 +28,8 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ project.title }}</h5>
                         <p class="card-text">{{ project.text }}</p>
-                        <a href="#" class="btn btn-primary">Modifier</a>
-                        <a href="{{path('delete_project', {id:project.id}) }}">supprimer</a>
+                        <a href="{{ path('update_project', {id:project.id}) }}" class="btn btn-primary">Modifier</a>
+                        <a href="{{ path('delete_project', {id:project.id}) }}" class="btn btn-primary">supprimer</a>
                     </div>
                 </div>
             {% endfor %}

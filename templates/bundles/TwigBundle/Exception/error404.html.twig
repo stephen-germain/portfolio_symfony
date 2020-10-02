@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}erreur 404{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-12 text-center">
+                <h1>Erreur 404</h1>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-4 offset-4 text-center">
+                <h2>Erreur 404</h2>
+                <p>La page que vous cherchez n'existe pas.</p>
+                <p>Cliquez sur le lien : <a href="{{ path('home') }}">pour retourner sur la page d'accueil</a>.</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
