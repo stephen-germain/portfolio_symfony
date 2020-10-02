@@ -11,7 +11,7 @@
         </div>
         <div class="row p-5">
             {% for project in projects %}
-                <div class="row row-cols-1 row-cols-md-2">
+                {# <div class="row row-cols-1 row-cols-md-2">
                     <a href="{{ project.url }}" </a>
                     <div class="col mb-4">
                         <div class="card">
@@ -22,10 +22,20 @@
                             </div>
                         </div>
                     </div>
+                </div> #}
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ asset('img/images/' ~ project.img) }}" class="card-img-top" alt="projets">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.text }}</p>
+                        <a href="#" class="btn btn-primary">Modifier</a>
+                        <a href="{{path('delete_project', {id:project.id}) }}">supprimer</a>
+                    </div>
                 </div>
             {% endfor %}
         </div>
         <a href="{{ path('create_project') }}" class="btn btn-outline-dark float-right">Ajouter</a>
+        
     </div>
 
 {% endblock %}

@@ -25,7 +25,7 @@ class ProjectType extends AbstractType
                 'required' => true,
                 'label' => 'Description',
                 'attr' => [
-                    'placeholder' => 'déscription du site'
+                    'placeholder' => 'description du site'
                 ]
             ])
             ->add('img', FileType::class, [
@@ -39,7 +39,7 @@ class ProjectType extends AbstractType
                 'required' => true,
                 'label' => 'Adresse du site',
                 'attr' => [
-                    'placeholder' => 'htt ps://monsite.fr'
+                    'placeholder' => 'https://monsite.fr'
                 ]
             ])
             ->add('save', SubmitType::class, [

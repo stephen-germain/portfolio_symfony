@@ -41,7 +41,10 @@ class AdminProjectController extends AbstractController
                 $newNomImg = $nomImg.'.'.$extensionImg;
 
                 try{
-                    $chemin = $this->getParameter('photos_site').'/'.$newNomImg;
+                    $img->move(
+                        $this->getParameter('photos_site'),
+                        $newNomImg
+                    );
                 }
                 catch(FileException $e){
                     $this->addFlash(
@@ -72,6 +75,24 @@ class AdminProjectController extends AbstractController
         return $this->render('admin/adminForm.html.twig', [
             'formulaire' => $form->createView()
         ]);
+    }
+    /**
+     * @Route("/admin/deleteProject-{id}", name="delete_project")
+     */
+    public function deleteProject(ProjectRepository $projectRepository, $id)
+    {
+        $project = $projectRepository->find($id);
+
+        $manager = $this->getDoctrine()->getManager();
+        $manager->remove($project);
+        $manager->flush();
+
+        $this->addFlash(
+            'danger',
+            'La compétence à bien été supprimée'
+        );
+        
+        return $this->redirectToRoute('admin_project');
     }
 
 }
