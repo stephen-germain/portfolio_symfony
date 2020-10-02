@@ -1,20 +1,31 @@
 {% extends 'baseAdmin.html.twig' %}
 
-{% block title %}Hello AdminProjectController!{% endblock %}
+{% block title %}Projets{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-3">
+                <h1>Les projets</h1>
+            </div>
+        </div>
+        <div class="row p-5">
+            {% for project in projects %}
+                <div class="row row-cols-1 row-cols-md-2">
+                    <a href="{{ project.url }}" </a>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="{{ project.img }}" class="card-img-top" alt="projets">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ project.title}}</h5>
+                                <p class="card-text">{{ project.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="{{ path('create_project') }}" class="btn btn-outline-dark float-right">Ajouter</a>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Applications/MAMP/htdocs/DWWM3/Symfony/portfolio/src/Controller/AdminProjectController.php'|file_link(0) }}">src/Controller/AdminProjectController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Applications/MAMP/htdocs/DWWM3/Symfony/portfolio/templates/admin_project/index.html.twig'|file_link(0) }}">templates/admin_project/index.html.twig</a></code></li>
-    </ul>
-</div>
 {% endblock %}

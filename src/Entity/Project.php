@@ -32,6 +32,11 @@ class Project
      */
     private $img;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $url;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +74,18 @@ class Project
     public function setImg(string $img): self
     {
         $this->img = $img;
+
+        return $this;
+    }
+
+    public function getUrl(): ?string
+    {
+        return $this->url;
+    }
+
+    public function setUrl(string $url): self
+    {
+        $this->url = $url;
 
         return $this;
     }
