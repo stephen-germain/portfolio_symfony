@@ -32,21 +32,24 @@
                 </div>
             </nav>
         </header>
-         {% for label, messages in app.flashes(['success', 'danger']) %}
+        
+        {% block body %}
+        {% endblock %}
+        
+            <!-- Footer -->
+        
+        <footer class="page-footer font-small blue pt-4">
+        
+            <div class="footer-copyright text-center py-3">
+                <p>© 2020 Copyright Stephen Germain</p>
+            </div>
+             {% for label, messages in app.flashes(['success', 'danger']) %}
                 {% for message in messages %}
                     <div class="flash-{{ label }} p-3 fixed-top bg-{{ label }} text-white text-center">
                         {{ message }}
                     </div>
                 {% endfor %}
             {% endfor %}
-        {% block body %}
-        {% endblock %}
-
-            <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <p>Stephen Germain</p>
-            </div>
         </footer>
 
         {% block javascripts %}{% endblock %}
