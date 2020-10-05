@@ -14,9 +14,11 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="home")
      */
-    public function index(SkillsRepository $skillRepository, ProjectRepository $projectRepository, \Swift_Mailer $mailer, Request $request)
+    public function index(SkillsRepository $skillsRepository, ProjectRepository $projectRepository, \Swift_Mailer $mailer, Request $request)
     {
-        $skills = $skillRepository->findAll();
+        $skill1 = $skillsRepository->findByTechno(1);
+        $skill2 = $skillsRepository->findByTechno(2);
+        $skill3 = $skillsRepository->findByTechno(3);
         $projects = $projectRepository->findAll();
 
         $formulaireContact = $this->createForm(ContactType::class);
@@ -48,7 +50,9 @@ class HomeController extends AbstractController
         }
 
         return $this->render('home/index.html.twig', [
-            'skills' => $skills,
+            'skill1' => $skill1,
+            'skill2' => $skill2,
+            'skill3' => $skill3,
             'projects' => $projects,
             'formulaireDeContact' => $formulaireContact->createView(),
         ]);

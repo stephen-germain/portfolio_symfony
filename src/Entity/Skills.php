@@ -23,14 +23,10 @@ class Skills
     private $nom;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="integer")
      */
-    private $framework;
+    private $technologies;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $cms;
 
     public function getId(): ?int
     {
@@ -49,27 +45,16 @@ class Skills
         return $this;
     }
 
-    public function getFramework(): ?string
+    public function getTechnologies(): ?int
     {
-        return $this->framework;
+        return $this->technologies;
     }
 
-    public function setFramework(?string $framework): self
+    public function setTechnologies(int $technologies): self
     {
-        $this->framework = $framework;
+        $this->technologies = $technologies;
 
         return $this;
     }
 
-    public function getCms(): ?string
-    {
-        return $this->cms;
-    }
-
-    public function setCms(?string $cms): self
-    {
-        $this->cms = $cms;
-
-        return $this;
-    }
 }

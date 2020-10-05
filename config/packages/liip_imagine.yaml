@@ -2,3 +2,9 @@
 liip_imagine:
     # valid drivers options include "gd" or "gmagick" or "imagick"
     driver: "gd"
+    filter_sets:
+            taille:
+                quality: 85
+                filters:
+                    scale:
+                        dim: [ 250, 250 ]

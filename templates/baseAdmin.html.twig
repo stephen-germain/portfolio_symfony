@@ -16,22 +16,43 @@
 
     <body>
         <!-- Sticky navbar-->
-        <header class="header sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-                <div class="container"><a class="navbar-brand" href="{{path('home')}}">
-                    <strong class="h6 mb-0 font-weight-bold text-uppercase">Portfolio</strong></a>
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="{{path('home')}}">Accueil<span class="sr-only">(current)</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{path('admin_skills')}}">Compétences</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{path('admin_project')}}">Projets</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{path('app_logout')}}">Déconnexion</a></li>
+        <header class="header">
+           
+            <div class="container-fluid m-0 p-0">
+                <div class="jumbotron mb-0 bg-dark text-white text-center">
+                    <h2>Espace administrateur</h2>
+                    <p>Bienvenue sur l'espace administrateur de votre Portfolio</p>
+                </div>
+            </div>
+         </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                {% block body %}
+                    <div class="col-2 bg-secondary text-white py-3 aside">
+                        <ul class="nav flex-column aside">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="{{path('admin')}}">Accueil admin<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{path('admin_skills')}}">Compétences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{path('admin_project')}}">Projets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{path('home')}}">Retour accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{path('app_logout')}}">Déconnexion</a>
+                            </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-        </header>
+                {% endblock %}
+            </div>
+        </div>
+
+            
         {% for label, messages in app.flashes(['success', 'danger']) %}
                 {% for message in messages %}
                     <div class="flash-{{ label }} p-3 fixed-top bg-{{ label }} text-white text-center">
@@ -39,18 +60,7 @@
                     </div>
                 {% endfor %}
             {% endfor %} 
-        
-        {% block body %}
-        {% endblock %}
-        
-            <!-- Footer -->
-        
-        <footer class="page-footer font-small blue pt-4">
-        
-            <div class="footer-copyright text-center py-3">
-                <p>© 2020 Copyright Stephen Germain</p>
-            </div>
-        </footer>
+
 
         {% block javascripts %}{% endblock %}
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

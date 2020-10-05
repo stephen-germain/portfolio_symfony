@@ -16,10 +16,15 @@ class AdminSkillController extends AbstractController
      */
     public function index(SkillsRepository $skillsRepository)
     {
-        $skill = $skillsRepository->findAll();
+        $skill1 = $skillsRepository->findByTechno(1);
+        $skill2 = $skillsRepository->findByTechno(2);
+        $skill3 = $skillsRepository->findByTechno(3);
+
         
         return $this->render('admin/adminSkills.html.twig', [
-            'skills' => $skill,
+            'skill1' => $skill1,
+            'skill2' => $skill2,
+            'skill3' => $skill3,
         ]);
     }
 

@@ -1,0 +1,23 @@
+.jumbotron{
+    border-radius: 0;
+}
+
+.aside{
+    min-height: 65vh;
+}
+
+a{
+    color: #FFFFFF;
+}
+
+    a:hover{
+        color: #FFFFFF;
+    }
+
+table a{
+    color: #000000;
+}
+
+    table a:hover{
+        color: #000000;
+    }

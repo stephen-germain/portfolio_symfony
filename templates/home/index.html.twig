@@ -26,27 +26,27 @@
                             <div class="col-md-4">
                                 <h5 class="display-5">{% trans %}Langages{% endtrans %}</h5>
 
-                                {% for skill in skills %}
+                                {% for langage in skill1 %}
 
-                                <p>{{ skill.nom }}</p>
+                                <p>{{ langage.nom }}</p>
 
                                 {% endfor %}
                             </div>
                             <div class="col-md-4">
                                 <h5 class="display-5">Frameworks</h5>
 
-                                {% for skill in skills %}
+                                {% for framework in skill2 %}
 
-                                    <p>{{ skill.framework }}</p>
+                                    <p>{{ framework.nom }}</p>
 
                                 {% endfor %}
                             </div>
                             <div class="col-md-4">
                                 <h5 class="display-5">CMS</h5>
 
-                                {% for skill in skills %}
+                                {% for cms in skill3 %}
 
-                                    <p>{{ skill.cms }}</p>
+                                    <p>{{ cms.nom }}</p>
 
                                 {% endfor %}
                             </div>
@@ -70,7 +70,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card">
                                 <a href="{{ project.url }}"> 
-                                    <img src="{{ asset('img/images/' ~ project.img) }}" class="card-img-top" alt="projets">
+                                    <img src="{{ asset('img/images/' ~ project.img)  }}" class="card-img-top" alt="projets">
                                     <div class="card-body">
                                         <h5 class="card-title">{{ project.title}}</h5>
                                         <p class="card-text">{{ project.text }}</p>

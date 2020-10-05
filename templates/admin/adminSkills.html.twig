@@ -4,84 +4,78 @@
 
 {% block body %}
 
-    <div class="container">
-       <div class="row py-5">
-            <div class="example-wrapper">
-                <h3>Liste des compétences</h3>
-            </div>
+    {{ parent() }}
+    
+    <div class="col-10">
+        <div class="example-wrapper">
+            <h3>Liste des compétences</h3>
         </div>
-
-      
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>langages</h4>
-                    <table class="table table-bordered table-hover table-sm text-center">
-                        <thead>
-                            <tr>
-                                <th>compétence</th>
-                                <th>actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                          {% for skill in skills %}
-                            <tr>
-                                <td>{{skill.nom}}</td>
-
-                                <td>
-                                    <a href="{{path('skills_update', {id:skill.id}) }}">modifier</a>
-                                    <a href="{{path('skills_delete', {id:skill.id}) }}">supprimer</a>
-                                </td>
-                            </tr>
-                               {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-4">
-                    <h4>frameworks</h4>
-                    <table class="table table-bordered table-hover table-sm text-center">
-                        <thead>
-                            <tr>
-                                <th>compétence</th>
-                                <th>actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        {% for skill in skills %}
-                            <tr>
-                                <td>{{skill.framework}}</td>
-                                <td>
-                                    <a href="{{path('skills_update', {id:skill.id}) }}">modifier</a>
-                                    <a href="{{path('skills_delete', {id:skill.id}) }}">supprimer</a>
-                                </td>
-                            </tr>
-                               {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-4">
-                    <h4>cms</h4>
-                    <table class="table table-bordered table-hover table-sm text-center">
-                        <thead>
-                            <tr>
-                                <th>compétence</th>
-                                <th>actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        {% for skill in skills %}
-                            <tr>
-                                <td>{{skill.cms}}</td>
-                                <td>
-                                    <a href="{{path('skills_update', {id:skill.id}) }}">modifier</a>
-                                    <a href="{{path('skills_delete', {id:skill.id}) }}">supprimer</a>
-                                </td>
-                            </tr>
-                               {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div> 
+        <div>
+            <h4>langages</h4>
+            <table class="table table-bordered table-hover table-sm text-center">
+                <thead>
+                    <tr>
+                        <th>compétence</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for langage in skill1 %}
+                        <tr>
+                            <td>{{langage.nom}}</td>
+                            <td>
+                                <a href="{{path('skills_update', {id:langage.id}) }}">modifier</a>
+                                <a href="{{path('skills_delete', {id:langage.id}) }}">supprimer</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div >
+            <h4>frameworks</h4>
+            <table class="table table-bordered table-hover table-sm text-center">
+                <thead>
+                    <tr>
+                        <th>compétence</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for framework in skill2 %}
+                        <tr>
+                            <td>{{framework.nom}}</td>
+                            <td>
+                                <a href="{{path('skills_update', {id:framework.id}) }}">modifier</a>
+                                <a href="{{path('skills_delete', {id:framework.id}) }}">supprimer</a>
+                            </td>
+                        </tr>
+                   {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h4>cms</h4>
+            <table class="table table-bordered table-hover table-sm text-center">
+                <thead>
+                    <tr>
+                        <th>compétence</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cms in skill3 %}
+                        <tr>
+                            <td>{{cms.nom}}</td>
+                            <td>
+                                <a href="{{path('skills_update', {id:cms.id}) }}">modifier</a>
+                                <a href="{{path('skills_delete', {id:cms.id}) }}">supprimer</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>  
         <a href="{{ path('skills_create') }}" class="btn btn-outline-dark float-right">Ajouter</a>
     </div>
-
 {% endblock %}

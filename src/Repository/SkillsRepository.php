@@ -47,4 +47,14 @@ class SkillsRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findByTechno($number) /* pour sélectionner par superficie*/
+    {
+        return $this->createQueryBuilder('t') /* */
+            ->andWhere('t.technologies = :val') /* on cherche la valeur d'une superficie */
+            ->setParameter('val', $number) /* on définit cette valeur */
+            ->orderBy('t.technologies', 'DESC') /* tri par ordre décroissant*/
+            ->getQuery() /* requête */
+            ->getResult(); /* résultats */
+    } 
 }

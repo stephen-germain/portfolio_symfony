@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class SkillsType extends AbstractType
@@ -16,23 +17,15 @@ class SkillsType extends AbstractType
         $builder
             ->add('nom', TextType::class, [
                 'required' => false,
-                'label' => 'Langages',
                 'attr' => [
                     'placeholder' => 'Langage'
                 ]
             ])
-            ->add('framework', TextType::class, [
-                'required' => false,
-                'label' => 'Framework',
-                'attr' => [
-                    'placeholder' => 'Framework'
-                ]
-            ])
-            ->add('cms', TextType::class, [
-                'required' => false,
-                'label' => 'cms',
-                'attr' => [
-                    'placeholder' => 'CMS'
+            ->add('technologies', ChoiceType::class, [
+                'choices' => [
+                    'langage' => 1,
+                    'framework' => 2,
+                    'cms' => 3,
                 ]
             ])
             ->add('save', SubmitType::class, [
