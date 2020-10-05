@@ -20,7 +20,7 @@
         <section id="top" class="py-5 header text-center">
             <div class="container py-5 text-white">
                 <header class="test py-5">
-                    <h1 class="display-4">Stephen GERMAIN</h1>
+                    <h1 class="display-4">{{ nom|raw }}</h1>
                     <p class="font-italic mb-1">{% trans %}Développeur Web et Web Mobile{% endtrans %}</p>
                 </header>
             </div>
@@ -63,10 +63,10 @@
             <div class="container text-center text-md-left">
                 <div class="row">
                     <div class="col-md-6 mt-md-0 mt-3">
-                        <h5 class="text-uppercase">stephen germain</h5>
-                        <p>4 allée Alain Bashung</p>
-                        <p>91420 Morangis</p>
-                        <p>stephen.germain@free.fr</p>
+                        <h5 class="text-uppercase">{{ nom|raw }}</h5>
+                        <p>{{ adresse|raw }}</p>
+                        <p>{{ ville|raw }}</p>
+                        <p>{{ mail|raw }}</p>
                     </div>
 
                     <hr class="clearfix w-100 d-md-none pb-3">
@@ -97,7 +97,7 @@
                         <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                     </svg>
                 </a>
-                <p>© 2020 Copyright Stephen GERMAIN</p>
+                <p>© 2020 Copyright {{ nom|raw }}</p>
             </div>
         </footer>
 
