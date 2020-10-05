@@ -39,6 +39,15 @@
                             <li class="test nav-item"><a class="nav-link" href="#skills">{% trans %}Compétences{% endtrans %}</a></li>
                             <li class="test nav-item"><a class="nav-link" href="#projects">{% trans %}Projets{% endtrans %}</a></li>
                             <li class="test nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="test nav-item">
+                                {% for langue in locales %}
+                                    {% if langue != app.request.locale %}
+                                        <a class="nav-link" href="{{ path('change_language', {'langue' : langue}) }}">
+                                            <img src="{{ asset('img/drapeaux/drapeau_'~ langue ~'.png') }}" alt="drapeaux">
+                                        </a>
+                                    {% endif %}
+                                {% endfor %}
+                            </li>
                         </ul>
                     </div>
                 </div>
