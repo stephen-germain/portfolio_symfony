@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="rMVOvIZ" resname="Développeur Web et Web Mobile">
+        <source>Développeur Web et Web Mobile</source>
+        <target>Web and Mobile Web Developer</target>
+      </trans-unit>
+      <trans-unit id="UzFhc1Y" resname="Accueil">
+        <source>Accueil</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="ZyFT62v" resname="A propos">
+        <source>A propos</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="QTkjKFo" resname="Compétences">
+        <source>Compétences</source>
+        <target>Skills</target>
+      </trans-unit>
+      <trans-unit id="Da1htjG" resname="Projets">
+        <source>Projets</source>
+        <target>Projects</target>
+      </trans-unit>
+      <trans-unit id="0.oNtva" resname="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.">
+        <source>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</source>
+        <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</target>
+      </trans-unit>
+      <trans-unit id="JuW0SsE" resname="Langages">
+        <source>Langages</source>
+        <target>Languages</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
