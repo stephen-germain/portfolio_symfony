@@ -3,22 +3,17 @@
 namespace App\Controller;
 
 use App\Form\ContactType;
-use App\Repository\SkillsRepository;
-use App\Repository\ProjectRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class HomeController extends AbstractController
+class ContactController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/contact", name="contact")
      */
-    public function index(SkillsRepository $skillRepository, ProjectRepository $projectRepository, \Swift_Mailer $mailer, Request $request)
+    public function index(\Swift_Mailer $mailer, Request $request)
     {
-        $skills = $skillRepository->findAll();
-        $projects = $projectRepository->findAll();
-
         $formulaireContact = $this->createForm(ContactType::class);
         $formulaireContact->handleRequest($request);
 
@@ -47,11 +42,8 @@ class HomeController extends AbstractController
             return $this->redirectToRoute('home');
         }
 
-        return $this->render('home/index.html.twig', [
-            'skills' => $skills,
-            'projects' => $projects,
+        return $this->render('contact/index.html.twig', [
             'formulaireDeContact' => $formulaireContact->createView(),
         ]);
     }
-
 }

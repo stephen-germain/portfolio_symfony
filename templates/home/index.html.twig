@@ -33,7 +33,7 @@
                                 {% endfor %}
                             </div>
                             <div class="col-md-4">
-                                <h2>Frameworks</h2>
+                                <h5 class="display-5">Frameworks</h5>
 
                                 {% for skill in skills %}
 
@@ -42,7 +42,7 @@
                                 {% endfor %}
                             </div>
                             <div class="col-md-4">
-                                <h2>CMS</h2>
+                                <h5 class="display-5">CMS</h5>
 
                                 {% for skill in skills %}
 
@@ -67,18 +67,16 @@
                 </div>
                 <div class="row p-5">
                     {% for project in projects %}
-                        <div class="row row-cols-1 row-cols-md-2">
-                            <a href="{{ project.url }}"> 
-                                <div class="col mb-4">
-                                    <div class="card">
-                                        <img src="{{ asset('img/images/' ~ project.img) }}" class="card-img-top" alt="projets">
-                                        <div class="card-body">
-                                            <h5 class="card-title">{{ project.title}}</h5>
-                                            <p class="card-text">{{ project.text }}</p>
-                                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <a href="{{ project.url }}"> 
+                                    <img src="{{ asset('img/images/' ~ project.img) }}" class="card-img-top" alt="projets">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ project.title}}</h5>
+                                        <p class="card-text">{{ project.text }}</p>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>  
@@ -94,29 +92,12 @@
                     <div class="divider"></div>
                     <!-- Default form contact -->
                     <form class="text-center border border-light p-5" action="#!">
-                        <p class="h4 mb-4">Contact us</p>
-                        <!-- Name -->
-                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
-                        <!-- Email -->
-                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-                        <!-- Subject -->
-                        <label>Subject</label>
-                        <select class="browser-default custom-select mb-4">
-                            <option value="" disabled>Choose option</option>
-                            <option value="1" selected>Feedback</option>
-                            <option value="2">Report a bug</option>
-                            <option value="3">Feature request</option>
-                            <option value="4">Feature request</option>
-                        </select>
-                        <!-- Message -->
-                        <div class="form-group">
-                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-                        </div>
-                        <!-- Send button -->
-                        <button class="btn btn-info btn-block" type="submit">Send</button>
+                        {{ form_start(formulaireDeContact) }}
+                        {{ form_end(formulaireDeContact) }}
                     </form>
                 </div>
             </div>
-        </div>
+        </div> 
+    </div>
     </section>
 {% endblock %}
