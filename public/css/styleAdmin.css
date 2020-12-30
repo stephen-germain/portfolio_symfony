@@ -21,3 +21,7 @@ table a{
     table a:hover{
         color: #000000;
     }
+
+img{
+    width: 50px;
+}

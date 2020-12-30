@@ -23,31 +23,22 @@
                     <div class="divider"></div>
                     <div class="container pt-5">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 animate">
                                 <h5 class="display-5">{% trans %}Langages{% endtrans %}</h5>
-
                                 {% for langage in skill1 %}
-
-                                <p>{{ langage.nom }}</p>
-
+                                    <p data-aos="fade-up">{{ langage.nom }}</p>
                                 {% endfor %}
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 animate__animated animate__fadeInUp">
                                 <h5 class="display-5">Frameworks</h5>
-
                                 {% for framework in skill2 %}
-
-                                    <p>{{ framework.nom }}</p>
-
+                                    <p data-aos="fade-up">{{ framework.nom }}</p>
                                 {% endfor %}
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 animate__animated animate__fadeInUp">
                                 <h5 class="display-5">CMS</h5>
-
                                 {% for cms in skill3 %}
-
-                                    <p>{{ cms.nom }}</p>
-
+                                    <p data-aos="fade-up">{{ cms.nom }}</p>
                                 {% endfor %}
                             </div>
                         </div>
@@ -65,18 +56,20 @@
                     <div class="divider"></div>
                     <p class="text-muted lead pt-5">{% trans %}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.{% endtrans %}</p>
                 </div>
-                <div class="row p-5">
+                <div class="row m-3 global">
                     {% for project in projects %}
-                        <div class="col-md-6 mb-4">
-                            <div class="card">
-                                <a href="{{ project.url }}"> 
-                                    <img src="{{ asset('img/images/' ~ project.img)  }}" class="card-img-top" alt="projets">
+                        <div class="col-md-6 mb-4 carte">
+                            {# <div class="card"> #}
+                                <a class="text-decoration-none text-dark" href="{{ project.url }}"> 
+                                    <div>
+                                        <img src="{{ asset('img/images/' ~ project.img)  }}" class="card-img-top" alt="projets">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">{{ project.title}}</h5>
                                         <p class="card-text">{{ project.text }}</p>
                                     </div>
                                 </a>
-                            </div>
+                            {# </div> #}
                         </div>
                     {% endfor %}
                 </div>  
@@ -91,10 +84,15 @@
                     <h2>Contact</h2>
                     <div class="divider"></div>
                     <!-- Default form contact -->
-                    <form class="text-center border border-light p-5" action="#!">
+                    <div class="text-center border border-light p-5">
                         {{ form_start(formulaireDeContact) }}
+                            {{ form_row(formulaireDeContact.nom, {'attr': {'data-aos': 'fade-up'}}) }}
+                            {{ form_row(formulaireDeContact.prenom, {'attr': {'data-aos': 'fade-up'}}) }}
+                            {{ form_row(formulaireDeContact.email, {'attr': {'data-aos': 'fade-up'}}) }}
+                            {{ form_row(formulaireDeContact.message, {'attr': {'data-aos': 'fade-up'}}) }}
+                            {# <button class="btn btn-dark">Envoyer</button> #}
                         {{ form_end(formulaireDeContact) }}
-                    </form>
+                    </div>
                 </div>
             </div>
         </div> 

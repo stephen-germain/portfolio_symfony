@@ -21,11 +21,11 @@ class HomeController extends AbstractController
         $skill3 = $skillsRepository->findByTechno(3);
         $projects = $projectRepository->findAll();
 
-        $formulaireContact = $this->createForm(ContactType::class);
-        $formulaireContact->handleRequest($request);
+        $form = $this->createForm(ContactType::class);
+        $form->handleRequest($request);
 
-        if($formulaireContact->isSubmitted() && $formulaireContact->isValid()){
-            $infos = $formulaireContact->getData();
+        if($form->isSubmitted() && $form->isValid()){
+            $infos = $form->getData();
             $mail = (new \Swift_Message('Demande de contact'))
                 ->setFrom($infos['email'])
                 ->setTo('stephen.germain971@gmail.com')
@@ -34,8 +34,7 @@ class HomeController extends AbstractController
                         'contact/email.html.twig', [
                             'nom' => $infos['nom'],
                             'prenom' => $infos['prenom'],
-                            'mail' => $infos['mail'],
-                            'objet' => $infos['objet'],
+                            'email' => $infos['email'],
                             'message' => $infos['message']
                         ],
                         'text/html'
@@ -54,8 +53,7 @@ class HomeController extends AbstractController
             'skill2' => $skill2,
             'skill3' => $skill3,
             'projects' => $projects,
-            'formulaireDeContact' => $formulaireContact->createView(),
+            'formulaireDeContact' => $form->createView(),
         ]);
     }
-
 }

@@ -2,12 +2,17 @@
     Coordonnées du contact : 
     <ul>
         <li>Nom : {{ nom }} {{ prenom }}</li>
-        <li>Email : {{ mail }}</li>
+        <li>Email : {{ email }}</li>
     </ul>
 </p>
-
-<p>Objet : {{ objet }}</p>
 
 <p><b>Message : </<b></p>
 
 <p>{{ message|nl2br }}</p>
+
+{# <h1>Nouveau contact</h1>
+<p>Nom : {{ infos.nom }}</p>
+<p>prenom : {{ infos.prenom }}
+<p>Email : {{ infos.email }}</p>
+<p>Objet : {{ infos.objet }}
+<p>Message : {{ infos.message|raw }}</p> #}

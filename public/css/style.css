@@ -1,10 +1,9 @@
 /*
-*
 * ==========================================
-* FOR DEMO PURPOSES
+* GENERAL
 * ==========================================
-*
 */
+
 .text-small {
     font-size: 0.9rem !important;
 }
@@ -16,7 +15,7 @@
     margin: 0 auto;
 }
 
-.header, footer{
+footer{
     background-color: #00d2ff;
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 100%);
 }
@@ -25,21 +24,139 @@ html {
     scroll-behavior: smooth;
   }
 
+  /*
+* ==========================================
+* HEADER
+* ==========================================
+*/
+
+#top{
+    background-image: url('../img/cobweb-3725540_1920.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.nom{
+    /* animation-delay: 300ms; */
+    animation-duration: 3s;
+}
+
+.prenom{
+    animation-delay: 600ms;
+    animation-duration: 3s;
+}
+
+  /* Responsive */
+  /* @media all and (min-width: 1200px){
+    #top{
+        background-size: cover;
+        background-position: 0% 0px;
+        height: 80vh;
+    }
+  } 
+
+@media all and (max-width: 1199px){
+    #top{
+        background-size: cover;
+        background-position: 0% 0px;
+        height: 65vh;
+    }
+  }
+
+  @media all and (max-width: 767px){
+    #top{
+        background-size: contain;
+        background-position: 0% 0px;
+        height: 31vh;
+    }
+  } */
+
+  /*
+* ==========================================
+* ABOUT
+* ==========================================
+*/
+
 .section-1 {
     background: #f5f5f5;
 }
 
+/*
+* ==========================================
+* SKILLS
+* ==========================================
+*/
+
 .section-2 {
-    background: #F1F1F1;
+    /* background: #F1F1F1; */
+    background-image: url('../img/grid-725271_1920.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* height: 60vh; */
 }
+
+/* .animate{
+    visibility: hidden;
+} */
+
+
+/*
+* ==========================================
+* PROJECTS
+* ==========================================
+*/
 
 .section-3 {
-    background: #EAEAEA;
+    /* background: #EAEAEA; */
+    background-image: url('../img/website-4279521_1920.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
+.carte img{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border:1px solid #d6d6d6;
+    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+    transform: scale(1) rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+
+.card-body{
+    display: none;
+}
+
+.carte:hover .card-body{
+    display: block;
+}
+
+.carte:hover .card-img-top:hover {
+    transform: scale(1.15) rotate(0deg);
+    z-index: 900;
+  } 
+
+/*
+* ==========================================
+* CONTACT
+* ==========================================
+*/
 .section-4 {
     background: #E5E5E5;
 }
+
+/*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*/
 
 footer a{
 
