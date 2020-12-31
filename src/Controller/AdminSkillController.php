@@ -38,9 +38,31 @@ class AdminSkillController extends AbstractController
         $form = $this->createForm(SkillsType::class, $skill);
         $form->handleRequest($request);
 
+        $img = $form['img']->getData();
+
         if($form->isSubmitted()){
 
             if($form->isValid()){
+
+                $nomImg = md5(uniqid());
+                $extensionImg = $img->guessExtension();
+                $newNomImg = $nomImg.'.'.$extensionImg;
+
+                try{
+                    $img->move(
+                        $this->getParameter('photos_site'),
+                        $newNomImg
+                    );
+                }
+                catch(FileException $e){
+                    $this->addFlash(
+                        'danger',
+                        'Une erreur est survenue lors de l\'importation de l\'image'
+                    );
+                }
+
+                $skill->setImg($newNomImg);
+
                 $manager = $this->getDoctrine()->getManager();
                 $manager->persist($skill);
                 $manager->flush();
@@ -70,12 +92,42 @@ class AdminSkillController extends AbstractController
 
         $skill = $skillsRepository->find($id);
 
+        $oldNomImg = $skill->getImg();
+        $oldCheminImg = $this->getParameter('photos_site').'/'.$oldNomImg;
+
         $form = $this->createForm(SkillsType::class, $skill);
         $form->handleRequest($request);
+
+        $img = $form['img']->getData();
+
 
         if($form->isSubmitted()){
 
             if($form->isValid()){
+
+                if($oldNomImg != NULL){
+                    unlink($oldCheminImg);
+                }
+                
+                $nomImg = md5(uniqid());
+                $extensionImg = $img->guessExtension();
+                $newNomImg = $nomImg.'.'.$extensionImg;
+
+                try{
+                    $img->move(
+                        $this->getParameter('photos_site'),
+                        $newNomImg
+                    );
+                }
+                catch(FileException $e){
+                    $this->addFlash(
+                        'danger',
+                        'Une erreur est survenue lors de l\'importation de l\'image'
+                    );
+                }
+
+                $skill->setImg($newNomImg);
+
                 $manager = $this->getDoctrine()->getManager();
                 $manager->persist($skill);
                 $manager->flush();

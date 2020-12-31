@@ -84,6 +84,10 @@ html {
     background: #f5f5f5;
 }
 
+.imgProfil{
+    width: 200px;
+}
+
 /*
 * ==========================================
 * SKILLS
@@ -100,6 +104,9 @@ html {
     /* height: 60vh; */
 }
 
+.iconCompetence{
+    width: 35px;
+}
 /* .animate{
     visibility: hidden;
 } */
@@ -149,7 +156,12 @@ html {
 * ==========================================
 */
 .section-4 {
-    background: #E5E5E5;
+    /* background: #E5E5E5; */
+    background-image: url('../img/binary-system-557614_1920.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /*
