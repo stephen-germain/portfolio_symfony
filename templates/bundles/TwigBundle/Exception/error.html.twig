@@ -1,21 +1,80 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Stephen Germain">
 
-{% block title %}erreur {% endblock %}
+        <title>Stephen Germain | Erreur</title>
 
-{% block body %}
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <div class="container">
-        <div class="row p-5">
-            <div class="col-12 text-center">
-                <h1>Erreur</h1>
-            </div>
-        </div>
-        <div class="row p-5">
-            <div class="col-4 offset-4 text-center">
-               <p>Une erreur est survenue lors du chargement de la page. Si le problème persiste, veuillez contacter l'administrateur du site</p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        {# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> #}
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}"> {# asset pour viser le dossier "public" #}
+        <script src="{{ asset("js/main.js") }}"></script>
+
+         <style type="text/css">
+            @import url('//fonts.googleapis.com/css?family=Roboto');
+            body {
+                background: #2e739a;
+                color: #D7D7D7;
+                font: 16px/1.3 "Roboto", sans-serif;
+            }
+            header {
+                width: 100%;
+                margin:0px auto;
+            }
+            h1 {
+                text-align: center;
+                color:#D7D7D7;
+                font: 100px/1 "Roboto";
+                text-transform: uppercase;
+                margin: 5% auto 5%;
+                margin-bottom: 35px;
+            }
+
+            article { display: block; text-align: center; width: 650px; margin: 10px auto; }
+
+            @media screen and (max-width: 720px) {
+                article { display: block; text-align: center; width: 450px; margin: 0 auto; }
+                h1 { font: 70px/1 "Roboto";}
+                .wrap {margin-top: 50px;}
+            }
+
+            @media screen and (max-width: 480px) {
+                article { display: block; text-align: center; width: 300px !important; margin: 0 auto; }
+                h1 { font: 50px/1 "Roboto";}
+                .wrap {margin-top: 50px;}
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="wrap">
+            <article>
+                <header>
+                    <h1 id="fittext1">Erreur<i class="fa fa-exclamation-triangle fa-fw"></i></h1>
+                </header>
+                <p>Une erreur est survenue lors du chargement de la page. Si le problème persiste, veuillez contacter l'administrateur du site</p>
                 <p>Cliquez sur le lien : <a href="{{ path('home') }}">pour retourner sur la page d'accueil</a>.</p>
-            </div>
+            </article>
         </div>
-    </div>
-
-{% endblock %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
+        <script type="text/javascript">
+            $("#fittext1").fitText(1.1);
+            $("#fittext2").fitText(1.5);
+        </script>
+    </body>
+</html>

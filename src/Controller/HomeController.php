@@ -56,4 +56,20 @@ class HomeController extends AbstractController
             'formulaireDeContact' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route("/politique-confidentialite", name="politique")
+     */
+    public function politique(){
+
+        return $this->render('home/politique.html.twig');
+    }
+
+     /**
+     * @Route("/mentions-legales", name="mentions")
+     */
+    public function mentions(){
+
+        return $this->render('home/mentions.html.twig');
+    }
 }

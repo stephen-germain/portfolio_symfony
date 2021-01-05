@@ -11,7 +11,7 @@
 .divider{
     width: 100px;
     height: 2px;
-    background-color: #fff;
+    background-color: #343A40;
     margin: 0 auto;
 }
 
@@ -20,9 +20,9 @@ footer{
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 100%);
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-  }
+  } */
 
   /*
 * ==========================================
@@ -49,31 +49,6 @@ html {
     animation-duration: 3s;
 }
 
-  /* Responsive */
-  /* @media all and (min-width: 1200px){
-    #top{
-        background-size: cover;
-        background-position: 0% 0px;
-        height: 80vh;
-    }
-  } 
-
-@media all and (max-width: 1199px){
-    #top{
-        background-size: cover;
-        background-position: 0% 0px;
-        height: 65vh;
-    }
-  }
-
-  @media all and (max-width: 767px){
-    #top{
-        background-size: contain;
-        background-position: 0% 0px;
-        height: 31vh;
-    }
-  } */
-
   /*
 * ==========================================
 * ABOUT
@@ -81,11 +56,34 @@ html {
 */
 
 .section-1 {
-    background: #f5f5f5;
+    /* background: #f5f5f5; */
+    background-image: url('../img/sky-319546_1920.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .imgProfil{
     width: 200px;
+}
+
+.button-cv{
+    border: 1px solid white;
+    background: #343A40;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.7s;
+}
+
+
+.button-cv:hover {
+    border: 1px solid #343A40;
+    background-color: transparent;
+    color: #343A40;
+    text-decoration: none;
 }
 
 /*
@@ -93,6 +91,14 @@ html {
 * SKILLS
 * ==========================================
 */
+
+#skills{
+    color: #f5f5f5;
+}
+
+#skills h5{
+    border-bottom: 2px solid;
+}
 
 .section-2 {
     /* background: #F1F1F1; */
@@ -120,7 +126,7 @@ html {
 
 .section-3 {
     /* background: #EAEAEA; */
-    background-image: url('../img/website-4279521_1920.jpg');
+    background-image: url('../img/blue-4476259_1920.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -157,7 +163,7 @@ html {
 */
 .section-4 {
     /* background: #E5E5E5; */
-    background-image: url('../img/binary-system-557614_1920.jpg');
+    background-image: url('../img/ball-2326132_1920.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -172,6 +178,55 @@ html {
 
 footer a{
 
-    color: white;
+    color: white
 }
+
+
+/*
+* =======================
+*   404 page
+* =======================
+*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+.four_zero_four_bg h3{
+    font-size:80px;
+}
+			 
+.link_404{			 
+    color: #fff!important;
+    padding: 10px 20px;
+    background: #2897E3;
+    border-radius: 15px;
+    margin: 20px 0;
+    display: inline-block;
+    transition: all 0.7s;
+}
+
+.link_404:hover{
+    text-decoration: none;
+    background-color: #30CFFD;
+}
+.contant_box_404{ 
+    margin-top:-50px;
+}
+    
+
 
