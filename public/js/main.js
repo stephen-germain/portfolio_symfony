@@ -1,6 +1,6 @@
 $(function()
 {
-     $(".nav-link, .chevrontop").on("click", function(event)
+     $(".anchorlink, .chevrontop").on("click", function(event)
      {
             event.preventDefault();
             var hash = this.hash;

@@ -33,6 +33,14 @@
         <source>Langages</source>
         <target>Languages</target>
       </trans-unit>
+      <trans-unit id="q.oAlEa" resname="télécharger mon CV">
+        <source>télécharger mon CV</source>
+        <target>Download my CV</target>
+      </trans-unit>
+      <trans-unit id="D0UFsjv" resname="Télécharger mon CV">
+        <source>Télécharger mon CV</source>
+        <target>Download my CV</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

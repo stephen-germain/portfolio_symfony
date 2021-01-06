@@ -501,6 +501,98 @@
         <source>Please provide a valid phone number.</source>
         <target>Please provide a valid phone number.</target>
       </trans-unit>
+      <trans-unit id="WkYuMDd" resname="The checkbox has an invalid value.">
+        <source>The checkbox has an invalid value.</source>
+        <target>The checkbox has an invalid value.</target>
+      </trans-unit>
+      <trans-unit id="lY5Mzyl" resname="Please enter a valid email address.">
+        <source>Please enter a valid email address.</source>
+        <target>Please enter a valid email address.</target>
+      </trans-unit>
+      <trans-unit id="TzSC4.o" resname="Please select a valid option.">
+        <source>Please select a valid option.</source>
+        <target>Please select a valid option.</target>
+      </trans-unit>
+      <trans-unit id="qGRcTk7" resname="Please select a valid range.">
+        <source>Please select a valid range.</source>
+        <target>Please select a valid range.</target>
+      </trans-unit>
+      <trans-unit id="PU.w6nC" resname="Please enter a valid week.">
+        <source>Please enter a valid week.</source>
+        <target>Please enter a valid week.</target>
+      </trans-unit>
+      <trans-unit id="h3g5ioA" resname="Your password must be at least {{length}} characters long.">
+        <source>Your password must be at least {{length}} characters long.</source>
+        <target>Password must be at least {{length}} characters long.</target>
+      </trans-unit>
+      <trans-unit id="HQt7pPu" resname="Your password must include at least one letter.">
+        <source>Your password must include at least one letter.</source>
+        <target>Password must include at least one letter.</target>
+      </trans-unit>
+      <trans-unit id="4kGnTpC" resname="Your password must include both upper and lower case letters.">
+        <source>Your password must include both upper and lower case letters.</source>
+        <target>Password must include both upper and lower case letters.</target>
+      </trans-unit>
+      <trans-unit id=".1LWj9Y" resname="Your password must include at least one number.">
+        <source>Your password must include at least one number.</source>
+        <target>Password must include at least one number.</target>
+      </trans-unit>
+      <trans-unit id="KRX2OiI" resname="Your password must contain at least one special character.">
+        <source>Your password must contain at least one special character.</source>
+        <target>Password must contain at least one special character.</target>
+      </trans-unit>
+      <trans-unit id="emtnsRQ" resname="password_too_weak">
+        <source>password_too_weak</source>
+        <target>Password needs to be at least at strength level "{{ min_strength }}", current level is "{{ current_strength }}", try the following: {{ strength_tips }}.</target>
+      </trans-unit>
+      <trans-unit id="1bMxj6N" resname="rollerworks_password.strength_level.very_weak">
+        <source>rollerworks_password.strength_level.very_weak</source>
+        <target>Very Weak</target>
+      </trans-unit>
+      <trans-unit id="PkF6Qnr" resname="rollerworks_password.strength_level.weak">
+        <source>rollerworks_password.strength_level.weak</source>
+        <target>Weak</target>
+      </trans-unit>
+      <trans-unit id="8UFjc4_" resname="rollerworks_password.strength_level.medium">
+        <source>rollerworks_password.strength_level.medium</source>
+        <target>Medium</target>
+      </trans-unit>
+      <trans-unit id="plsDt_k" resname="rollerworks_password.strength_level.strong">
+        <source>rollerworks_password.strength_level.strong</source>
+        <target>Strong</target>
+      </trans-unit>
+      <trans-unit id="TDaSddR" resname="rollerworks_password.strength_level.very_strong">
+        <source>rollerworks_password.strength_level.very_strong</source>
+        <target>Very strong</target>
+      </trans-unit>
+      <trans-unit id="b69aHE_" resname="rollerworks_password.tip.letters">
+        <source>rollerworks_password.tip.letters</source>
+        <target>add (upper/lowercase) letters</target>
+      </trans-unit>
+      <trans-unit id="r9VRzdv" resname="rollerworks_password.tip.numbers">
+        <source>rollerworks_password.tip.numbers</source>
+        <target>add numbers</target>
+      </trans-unit>
+      <trans-unit id="0UmFw8K" resname="rollerworks_password.tip.lowercase_letters">
+        <source>rollerworks_password.tip.lowercase_letters</source>
+        <target>add lowercase letters</target>
+      </trans-unit>
+      <trans-unit id="8C7ce2C" resname="rollerworks_password.tip.uppercase_letters">
+        <source>rollerworks_password.tip.uppercase_letters</source>
+        <target>add uppercase letters</target>
+      </trans-unit>
+      <trans-unit id="BcuJ4QC" resname="rollerworks_password.tip.special_chars">
+        <source>rollerworks_password.tip.special_chars</source>
+        <target>add special characters</target>
+      </trans-unit>
+      <trans-unit id="b4R_iJG" resname="rollerworks_password.tip.length">
+        <source>rollerworks_password.tip.length</source>
+        <target>add more characters</target>
+      </trans-unit>
+      <trans-unit id="9ZViZeS" resname="This password was found in a database of compromised passwords. It has been used {{ used }} times. For security purposes you must use something else.">
+        <source>This password was found in a database of compromised passwords. It has been used {{ used }} times. For security purposes you must use something else.</source>
+        <target>This password was found in a database of compromised passwords. It has been used {{ used }} times. For security purposes you must use something else.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -405,6 +405,194 @@
         <source>This value is not a valid HTML5 color.</source>
         <target>Cette valeur n'est pas une couleur HTML5 valide.</target>
       </trans-unit>
+      <trans-unit id="dN.ZVc0" resname="Please enter a valid birthdate.">
+        <source>Please enter a valid birthdate.</source>
+        <target>Veuillez entrer une date de naissance valide.</target>
+      </trans-unit>
+      <trans-unit id="OPymPfZ" resname="The selected choice is invalid.">
+        <source>The selected choice is invalid.</source>
+        <target>Le choix sélectionné est invalide.</target>
+      </trans-unit>
+      <trans-unit id="GUH6TYE" resname="The collection is invalid.">
+        <source>The collection is invalid.</source>
+        <target>La collection est invalide.</target>
+      </trans-unit>
+      <trans-unit id="14il0ha" resname="Please select a valid color.">
+        <source>Please select a valid color.</source>
+        <target>Veuillez sélectionner une couleur valide.</target>
+      </trans-unit>
+      <trans-unit id="4AJRUCC" resname="Please select a valid country.">
+        <source>Please select a valid country.</source>
+        <target>Veuillez sélectionner un pays valide.</target>
+      </trans-unit>
+      <trans-unit id="xAI5mrh" resname="Please select a valid currency.">
+        <source>Please select a valid currency.</source>
+        <target>Veuillez sélectionner une devise valide.</target>
+      </trans-unit>
+      <trans-unit id="c6v9ASZ" resname="Please choose a valid date interval.">
+        <source>Please choose a valid date interval.</source>
+        <target>Veuillez choisir un intervalle de dates valide.</target>
+      </trans-unit>
+      <trans-unit id="2BR60Jg" resname="Please enter a valid date and time.">
+        <source>Please enter a valid date and time.</source>
+        <target>Veuillez saisir une date et une heure valides.</target>
+      </trans-unit>
+      <trans-unit id="ofLBhv0" resname="Please enter a valid date.">
+        <source>Please enter a valid date.</source>
+        <target>Veuillez entrer une date valide.</target>
+      </trans-unit>
+      <trans-unit id="Xsmm6Mc" resname="Please select a valid file.">
+        <source>Please select a valid file.</source>
+        <target>Veuillez sélectionner un fichier valide.</target>
+      </trans-unit>
+      <trans-unit id="Fka0cZD" resname="The hidden field is invalid.">
+        <source>The hidden field is invalid.</source>
+        <target>Le champ masqué n'est pas valide.</target>
+      </trans-unit>
+      <trans-unit id="69ux5Ml" resname="Please enter an integer.">
+        <source>Please enter an integer.</source>
+        <target>Veuillez saisir un entier.</target>
+      </trans-unit>
+      <trans-unit id="TQbat_9" resname="Please select a valid language.">
+        <source>Please select a valid language.</source>
+        <target>Veuillez sélectionner une langue valide.</target>
+      </trans-unit>
+      <trans-unit id="vpa7l8w" resname="Please select a valid locale.">
+        <source>Please select a valid locale.</source>
+        <target>Veuillez sélectionner une langue valide.</target>
+      </trans-unit>
+      <trans-unit id="Gz8pWER" resname="Please enter a valid money amount.">
+        <source>Please enter a valid money amount.</source>
+        <target>Veuillez saisir un montant valide.</target>
+      </trans-unit>
+      <trans-unit id="PRxiOhB" resname="Please enter a number.">
+        <source>Please enter a number.</source>
+        <target>Veuillez saisir un nombre.</target>
+      </trans-unit>
+      <trans-unit id="seAdKJo" resname="The password is invalid.">
+        <source>The password is invalid.</source>
+        <target>Le mot de passe est invalide.</target>
+      </trans-unit>
+      <trans-unit id="A5k0Q20" resname="Please enter a percentage value.">
+        <source>Please enter a percentage value.</source>
+        <target>Veuillez saisir un pourcentage valide.</target>
+      </trans-unit>
+      <trans-unit id="rH6V.WA" resname="The values do not match.">
+        <source>The values do not match.</source>
+        <target>Les valeurs ne correspondent pas.</target>
+      </trans-unit>
+      <trans-unit id="Eopl1Sm" resname="Please enter a valid time.">
+        <source>Please enter a valid time.</source>
+        <target>Veuillez saisir une heure valide.</target>
+      </trans-unit>
+      <trans-unit id="ll14Sm9" resname="Please select a valid timezone.">
+        <source>Please select a valid timezone.</source>
+        <target>Veuillez sélectionner un fuseau horaire valide.</target>
+      </trans-unit>
+      <trans-unit id="1xP1kmd" resname="Please enter a valid URL.">
+        <source>Please enter a valid URL.</source>
+        <target>Veuillez saisir une URL valide.</target>
+      </trans-unit>
+      <trans-unit id="iMmAsrC" resname="Please enter a valid search term.">
+        <source>Please enter a valid search term.</source>
+        <target>Veuillez saisir un terme de recherche valide.</target>
+      </trans-unit>
+      <trans-unit id="GRMTXRX" resname="Please provide a valid phone number.">
+        <source>Please provide a valid phone number.</source>
+        <target>Veuillez fournir un numéro de téléphone valide.</target>
+      </trans-unit>
+      <trans-unit id="WkYuMDd" resname="The checkbox has an invalid value.">
+        <source>The checkbox has an invalid value.</source>
+        <target>La case à cocher a une valeur non valide.</target>
+      </trans-unit>
+      <trans-unit id="lY5Mzyl" resname="Please enter a valid email address.">
+        <source>Please enter a valid email address.</source>
+        <target>Veuillez saisir une adresse email valide.</target>
+      </trans-unit>
+      <trans-unit id="TzSC4.o" resname="Please select a valid option.">
+        <source>Please select a valid option.</source>
+        <target>Veuillez sélectionner une option valide.</target>
+      </trans-unit>
+      <trans-unit id="qGRcTk7" resname="Please select a valid range.">
+        <source>Please select a valid range.</source>
+        <target>Veuillez sélectionner une plage valide.</target>
+      </trans-unit>
+      <trans-unit id="PU.w6nC" resname="Please enter a valid week.">
+        <source>Please enter a valid week.</source>
+        <target>Veuillez entrer une semaine valide.</target>
+      </trans-unit>
+      <trans-unit id="h3g5ioA" resname="Your password must be at least {{length}} characters long.">
+        <source>Your password must be at least {{length}} characters long.</source>
+        <target>Le mot de passe doit faire au moins {{length}} caractères.</target>
+      </trans-unit>
+      <trans-unit id="HQt7pPu" resname="Your password must include at least one letter.">
+        <source>Your password must include at least one letter.</source>
+        <target>Le mot de passe doit contenir au moins une lettre.</target>
+      </trans-unit>
+      <trans-unit id="4kGnTpC" resname="Your password must include both upper and lower case letters.">
+        <source>Your password must include both upper and lower case letters.</source>
+        <target>Le mot de passe doit contenir des majuscules et des minuscules.</target>
+      </trans-unit>
+      <trans-unit id=".1LWj9Y" resname="Your password must include at least one number.">
+        <source>Your password must include at least one number.</source>
+        <target>Le mot de passe doit contenir au moins un chiffre.</target>
+      </trans-unit>
+      <trans-unit id="KRX2OiI" resname="Your password must contain at least one special character.">
+        <source>Your password must contain at least one special character.</source>
+        <target>Le mot de passe doit contenir au moins un caractère spécial.</target>
+      </trans-unit>
+      <trans-unit id="emtnsRQ" resname="password_too_weak">
+        <source>password_too_weak</source>
+        <target>Le mot de passe doit avoir une force d'au moins "{{ min_strength }}", la force actuelle est "{{ current_strength }}", essayez ceci : {{ strength_tips }}.</target>
+      </trans-unit>
+      <trans-unit id="1bMxj6N" resname="rollerworks_password.strength_level.very_weak">
+        <source>rollerworks_password.strength_level.very_weak</source>
+        <target>Très faible</target>
+      </trans-unit>
+      <trans-unit id="PkF6Qnr" resname="rollerworks_password.strength_level.weak">
+        <source>rollerworks_password.strength_level.weak</source>
+        <target>Faible</target>
+      </trans-unit>
+      <trans-unit id="8UFjc4_" resname="rollerworks_password.strength_level.medium">
+        <source>rollerworks_password.strength_level.medium</source>
+        <target>Moyenne</target>
+      </trans-unit>
+      <trans-unit id="plsDt_k" resname="rollerworks_password.strength_level.strong">
+        <source>rollerworks_password.strength_level.strong</source>
+        <target>Forte</target>
+      </trans-unit>
+      <trans-unit id="TDaSddR" resname="rollerworks_password.strength_level.very_strong">
+        <source>rollerworks_password.strength_level.very_strong</source>
+        <target>Très forte</target>
+      </trans-unit>
+      <trans-unit id="b69aHE_" resname="rollerworks_password.tip.letters">
+        <source>rollerworks_password.tip.letters</source>
+        <target>ajouter des lettres (majuscules/minuscules)</target>
+      </trans-unit>
+      <trans-unit id="r9VRzdv" resname="rollerworks_password.tip.numbers">
+        <source>rollerworks_password.tip.numbers</source>
+        <target>ajouter des chiffres</target>
+      </trans-unit>
+      <trans-unit id="0UmFw8K" resname="rollerworks_password.tip.lowercase_letters">
+        <source>rollerworks_password.tip.lowercase_letters</source>
+        <target>ajouter des minuscules</target>
+      </trans-unit>
+      <trans-unit id="8C7ce2C" resname="rollerworks_password.tip.uppercase_letters">
+        <source>rollerworks_password.tip.uppercase_letters</source>
+        <target>ajouter des majuscules</target>
+      </trans-unit>
+      <trans-unit id="BcuJ4QC" resname="rollerworks_password.tip.special_chars">
+        <source>rollerworks_password.tip.special_chars</source>
+        <target>ajouter des caractères spéciaux</target>
+      </trans-unit>
+      <trans-unit id="b4R_iJG" resname="rollerworks_password.tip.length">
+        <source>rollerworks_password.tip.length</source>
+        <target>ajouter plus de caractères</target>
+      </trans-unit>
+      <trans-unit id="9ZViZeS" resname="This password was found in a database of compromised passwords. It has been used {{ used }} times. For security purposes you must use something else.">
+        <source>This password was found in a database of compromised passwords. It has been used {{ used }} times. For security purposes you must use something else.</source>
+        <target>Ce mot de passe a été trouvé dans une base de données de mots de passe erronés. Il a été utilisé {{ used }} fois. Pour des raisons de sécurité, veuillez choisir un autre mot de passe.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

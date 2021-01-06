@@ -30,14 +30,14 @@
         <section id="top" class="py-5 header text-center">
             <div class="container py-5 text-white">
                 <header class="test py-5">
-                    <h1 class="display-4 text-dark nom"
+                    <h1 class="display-4 text-white nom"
                         data-aos="fade-right"
                         data-aos-offset="300"
                         data-aos-duration="800"
                         data-aos-easing="ease-in-sine">
                         {{ nom|raw }}
                     </h1>
-                    <p class="font-italic mb-1  text-dark prenom" 
+                    <p class="font-italic mb-1  text-white prenom" 
                         data-aos="fade-left"
                         data-aos-offset="300"
                         data-aos-duration="800"
@@ -50,17 +50,17 @@
 
         <!-- Sticky navbar-->
         <header class="header sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm" id="mainNav">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm" id="mainNav">
                 <div class="container"><a class="navbar-brand" href="#top">
                     <strong class="h6 mb-0 font-weight-bold text-uppercase">Portfolio</strong></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="#top">{% trans %}Accueil{% endtrans %} <span class="sr-only">(current)</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">{% trans %}A propos{% endtrans %}</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#skills">{% trans %}Compétences{% endtrans %}</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#projects">{% trans %}Projets{% endtrans %}</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#top">{% trans %}Accueil{% endtrans %} <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a class="nav-link anchorlink" href="#about">{% trans %}A propos{% endtrans %}</a></li>
+                            <li class="nav-item"><a class="nav-link anchorlink" href="#skills">{% trans %}Compétences{% endtrans %}</a></li>
+                            <li class="nav-item"><a class="nav-link anchorlink" href="#projects">{% trans %}Projets{% endtrans %}</a></li>
+                            <li class="nav-item"><a class="nav-link anchorlink" href="#contact">Contact</a></li>
                             <li class="nav-item">
                                 {% for langue in locales %}
                                     {% if langue != app.request.locale %}
@@ -138,7 +138,7 @@
                             </a>
                         </div>
                         <div class="col-12 col-md-6">
-                            <p>© 2020 Copyright {{ nom|raw }} | <a class="text-decoration-none" href="{{ path('mentions') }}">Mentions légales</a><br><a class="text-decoration-none" href="{{ path('politique')}}">Politique de confidentialité</a></p>
+                            <p class="text-white">© 2020 Copyright {{ nom|raw }} | <a class="text-decoration-none" href="{{ path('mentions') }}">Mentions légales</a><br><a class="text-decoration-none" href="{{ path('politique')}}">Politique de confidentialité</a></p>
                         </div>
                     </div>
                 </div>
