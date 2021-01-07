@@ -3,6 +3,13 @@
 * GENERAL
 * ==========================================
 */
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .text-small {
     font-size: 0.9rem !important;
@@ -22,6 +29,11 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lato', sans-serif;
 }
 
 .color-section{
@@ -29,9 +41,6 @@ body{
     border-bottom: 1px solid white;
     border-top: 1px solid white;
 }
-/* html {
-    scroll-behavior: smooth;
-  } */
 
 /*
 * ==========================================
@@ -88,6 +97,15 @@ body{
     text-decoration: none;
 }
 
+.chevron-svg{
+  color: white;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+
+.chevron-svg:hover{
+  transform: scale(1.15);
+}
 /*
 * ==========================================
 * SKILLS
@@ -277,6 +295,11 @@ body{
     display: none;
 }
 
+.card-body:hover{
+  text-decoration: none;
+  color: white;
+}
+
 .carte:hover .card-body{
     display: block;
     color: white;
@@ -301,12 +324,23 @@ body{
 * ==========================================
 */
 footer{
-    background-color: #272f42;
+  background-color: #475A6B;
+    /* background-color: #272f42; */
     border-top: 1px solid white;
 }
 
 footer a{
-    color: white
+    color: white;
+}
+
+.network{
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+
+.network:hover{
+  transform: scale(1.15);
+  color: white;
 }
 
 /*
@@ -355,6 +389,30 @@ footer a{
 }
 .contant_box_404{ 
     margin-top:-50px;
+}
+
+/*
+* ==========================================
+* PRIVACY POLICY
+* ==========================================
+*/
+
+#politique{
+  background-color: #272f42;
+}
+
+#politique p{
+  color: white;
+}
+
+/*
+* ==========================================
+* LEGAL DISCLAMER
+* ==========================================
+*/
+
+#mentions{
+  background-color: #272f42;
 }
     
 

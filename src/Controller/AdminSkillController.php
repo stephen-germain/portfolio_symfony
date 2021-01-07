@@ -29,7 +29,7 @@ class AdminSkillController extends AbstractController
     }
 
     /**
-     * @Route("/admin/create", name="skills_create")
+     * @Route("/admin/create-skill", name="skills_create")
      */
     public function createSkills(Request $request)
     {
@@ -86,7 +86,7 @@ class AdminSkillController extends AbstractController
     }
 
     /**
-     * @Route("/admin/update-{id}", name="skills_update")
+     * @Route("/admin/update-skill-{id}", name="skills_update")
      */
     public function updateSkills(SkillsRepository $skillsRepository, $id, Request $request){
 
@@ -151,7 +151,7 @@ class AdminSkillController extends AbstractController
     }
 
     /**
-     * @Route("/admin/delete-{id}", name="skills_delete")
+     * @Route("/admin/delete-skill-{id}", name="skills_delete")
      */
     public function deleteSkill(SkillsRepository $skillsRepository, $id){
 

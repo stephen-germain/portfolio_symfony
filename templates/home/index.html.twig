@@ -19,8 +19,21 @@
                         <h2>{% trans %}A propos{% endtrans %}</h2>
                         <div class="divider"></div>
                     </div>
-                    <p class="text-muted lead pt-5">{% trans %}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.{% endtrans %}</p>
+                    <p class="lead pt-5 pb-4">
+                        {% trans %}Je suis développeur web junior et diplômé d’un Titre Professionnel en développement web &amp; web mobile de niveau 5 (équivalent BAC+2).
+                        Ce portfolio a pour but de présenter les différents projets sur lesquels j’ai travaillé durant mes formations.
+                        Vous pouvez également visualiser mon CV et le télécharger.{% endtrans %}
+                    </p>
                     <a class="button-cv" href="{{ asset("img/IMG.jpg")}}" download>{% trans %}Télécharger mon CV{% endtrans %}</a>
+                    <p class="pt-5">
+                        {% trans %}Si vous avez une question, ou si vous avez simplement besoin d’un renseignement, vous pouvez me contacter en cliquant ici:{% endtrans %}
+                        <a class="chevrontop" href="#contact">
+                            <svg class="chevron-svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -43,7 +56,7 @@
                     {% endfor %}
                 </div>
                 <div class="col-md-4 p-5">
-                    <h5 class="display-5 text-left py-4">Frameworks/Librairies</h5>
+                    <h5 class="display-5 text-left py-4">{% trans %}Frameworks/Bibliothèques{% endtrans %}</h5>
                     {% for framework in skill2 %}
                         <p data-aos="fade-up" class="text-left"><img src="{{ asset('img/images/') }}{{ framework.img }}" class="img-fluid iconCompetence" alt="{{ framework.nom }}"> - 
                         {{ framework.nom }}</p>
@@ -72,8 +85,8 @@
                 <ul>
                     <li>
                         <div class="content" data-aos="fade-right">
-                            <h4 class="title-bloc-educ">Stage Développeur Web &amp; web mobile - Philiance</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            <h4 class="title-bloc-educ">{% trans %}Stage Développeur Web &amp; web mobile - Philiance{% endtrans %}</h4>
+                            <p>{% trans %}[Stage de 1 Mois] Conception d’un site Web réaliser en collaboration avec des chefs de projets AMOA.{% endtrans %}</p>
                         </div>
                         <div class="time" data-aos="fade-left">
                             <h4>2020</h4>
@@ -81,8 +94,12 @@
                     </li>
                     <li>
                         <div class="content" data-aos="fade-left">
-                            <h4 class="title-bloc-educ">Formation Développeur Web &amp; web mobile - Philiance</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            <h4 class="title-bloc-educ">{% trans %}Formation Développeur Web &amp; web mobile - Philiance/Doranco{% endtrans %}</h4>
+                            <p>{% trans %}Formation avec pour :{% endtrans %}
+                                <p> - {% trans %}le coté front-end l'apprentissage des langages: HTML, CSS, JavaScript/jQuery incluant le framework Bootstrap{% endtrans %}</p>
+                                <p> - {% trans %}le coté back-end l'apprentissage des langages: PHP orienté objet, MySQL/base de données et le framework Symfony{% endtrans %}</p>
+                                <p> - {% trans %}la partie mobile l'apprentissage de REACT</p>{% endtrans %}
+                             </p>
                         </div>
                             <div class="time" data-aos="fade-right">
                             <h4>2020</h4>
@@ -90,8 +107,8 @@
                     </li>
                     <li>
                         <div class="content" data-aos="fade-right">
-                            <h4 class="title-bloc-educ">Formation Développeur Web Junior - OpenClassrooms</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            <h4 class="title-bloc-educ">{% trans %}Formation Développeur Web Junior - OpenClassrooms{% endtrans %}</h4>
+                            <p>{% trans %}Formation en ligne front-end et back-end dans laquelle l'apprentissage "from scratch" se fait sur les principaux langages : HTML, CSS, JavaScript, PHP et MySQL ainsi que le cms Wordpress.{% endtrans %}</p>
                         </div>
                             <div class="time" data-aos="fade-left">
                             <h4>2018-2019</h4>
@@ -99,10 +116,19 @@
                     </li>
                     <li>
                         <div class="content" data-aos="fade-left">
-                            <h4 class="title-bloc-educ">Baccalauréat gestion et comptabilité</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            <h4 class="title-bloc-educ">{% trans %}Divers emplois{% endtrans %}</h4>
+                            <p>{% trans %}Salarié en entreprise. Vous pourrez retrouver en détail, mes différents poste dans mon{% endtrans %} <a class="text-decoration-none" href="{{ asset("img/IMG.jpg")}}" download>CV</a>.</p>
                         </div>
                             <div class="time" data-aos="fade-right">
+                            <h4>2002-2019</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content" data-aos="fade-right">
+                            <h4 class="title-bloc-educ">{% trans %}Baccalauréat gestion et comptabilité{% endtrans %}</h4>
+                            <p></p>
+                        </div>
+                            <div class="time" data-aos="fade-left">
                             <h4>2000-2002</h4>
                         </div>
                     </li>
@@ -116,18 +142,16 @@
     ------- PROJECTS -------
     --------------------- #}
 
-    <section id="projects" class="py-5 section-3 color-section">
+    <section id="projects" class="py-5 section-3">
         <div class="container py-5 text-center">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
+       
                     <h2>{% trans %}Projets{% endtrans %}</h2>
-                    <div class="divider"></div>
-                    <p class="text-muted lead pt-5">{% trans %}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.{% endtrans %}</p>
-                </div>
-                <div class="row m-3 global">
+                    <div class="divider mb-5"></div>
+                
+                <div class="row m-3 pt-3 global">
                     {% for project in projects %}
                         <div class="col-md-6 mb-4 carte">
-                            <a class="text-decoration-none text-dark" href="{{ project.url }}"> 
+                            <a class="text-decoration-none text-white" href="{{ project.url }}"> 
                                 <div>
                                     <img src="{{ asset('img/images/' ~ project.img)  }}" class="card-img-top" alt="projets">
                                 </div>
@@ -139,7 +163,7 @@
                         </div>
                     {% endfor %}
                 </div>  
-            </div>
+            
         </div>
     </section>
 
@@ -147,7 +171,7 @@
     -------- CONTACT --------
     ---------------------- #}
 
-    <section id="contact" class="py-5 section-4">
+    <section id="contact" class="py-5 section-4 color-section">
         <div class="container py-5 text-center">
             <div class="row">
                 <div class="col-12 p-4">
@@ -159,6 +183,7 @@
                 <div class="col-md-2 mt-md-0 mt-3">
                     <h5 class="text-uppercase" data-aos="fade-up">{{ nom|raw }}</h5>
                     <p data-aos="fade-up">{{ ville|raw }}</p>
+                    <pd data-aos="fade-up">{{ tel|raw }}</p>
                     <p data-aos="fade-up">{{ mail|raw }}</p>
                 </div>
                 <div class="col-md-8 mx-auto">

@@ -25,21 +25,93 @@
         <source>Projets</source>
         <target>Projects</target>
       </trans-unit>
-      <trans-unit id="0.oNtva" resname="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.">
-        <source>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</source>
-        <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</target>
-      </trans-unit>
       <trans-unit id="JuW0SsE" resname="Langages">
         <source>Langages</source>
         <target>Languages</target>
       </trans-unit>
-      <trans-unit id="q.oAlEa" resname="télécharger mon CV">
-        <source>télécharger mon CV</source>
-        <target>Download my CV</target>
-      </trans-unit>
       <trans-unit id="D0UFsjv" resname="Télécharger mon CV">
         <source>Télécharger mon CV</source>
         <target>Download my CV</target>
+      </trans-unit>
+      <trans-unit id="IRmJTdQ" resname="Je suis développeur web junior et diplômé d’un Titre Professionnel en développement web &amp;amp; web mobile de niveau 5 (équivalent BAC+2).&#10;                        Ce portfolio a pour but de présenter les différents projets sur lesquels j’ai travaillé durant mes formations.&#10;                        Vous pouvez également visualiser mon CV et le télécharger.">
+        <source>Je suis développeur web junior et diplômé d’un Titre Professionnel en développement web &amp;amp; web mobile de niveau 5 (équivalent BAC+2).
+                        Ce portfolio a pour but de présenter les différents projets sur lesquels j’ai travaillé durant mes formations.
+                        Vous pouvez également visualiser mon CV et le télécharger.</source>
+        <target><![CDATA[I am a junior web developer and graduated with a Professional title in web development &amp; mobile web.
+                        This portfolio aims to present the different projects on which I worked during my training.
+                        You can also view my CV and download it.]]></target>
+      </trans-unit>
+      <trans-unit id="j7RwXGN" resname="Si vous avez une question, ou si vous avez simplement besoin d’un renseignement, vous pouvez me contacter en cliquant ici:">
+        <source>Si vous avez une question, ou si vous avez simplement besoin d’un renseignement, vous pouvez me contacter en cliquant ici:</source>
+        <target>If you have a question, or if you just need more information, you can contact me by clicking here:</target>
+      </trans-unit>
+      <trans-unit id="CwuJSpa" resname="Frameworks/Bibliothèques">
+        <source>Frameworks/Bibliothèques</source>
+        <target>Frameworks/Libraries</target>
+      </trans-unit>
+      <trans-unit id="dLmlXsP" resname="Formations et expériences">
+        <source>Formations et expériences</source>
+        <target>Course and experiences</target>
+      </trans-unit>
+      <trans-unit id="embAqAL" resname="Stage Développeur Web &amp;amp; web mobile - Philiance">
+        <source>Stage Développeur Web &amp;amp; web mobile - Philiance</source>
+        <target><![CDATA[Web &amp; Mobile Web Developer Internship - Philiance]]></target>
+      </trans-unit>
+      <trans-unit id="hsjr5Pp" resname="[Stage de 1 Mois] Conception d’un site Web réaliser en collaboration avec des chefs de projets AMOA.">
+        <source>[Stage de 1 Mois] Conception d’un site Web réaliser en collaboration avec des chefs de projets AMOA.</source>
+        <target>[Internship of 1 Month] Design of a website in collaboration with AMOA project managers.</target>
+      </trans-unit>
+      <trans-unit id="gaJK7H6" resname="Formation Développeur Web &amp;amp; web mobile - Philiance/Doranco">
+        <source>Formation Développeur Web &amp;amp; web mobile - Philiance/Doranco</source>
+        <target><![CDATA[Web &amp; mobile web developer training - Philiance/Doranco]]></target>
+      </trans-unit>
+      <trans-unit id="wCObBdY" resname="Formation Développeur Web Junior - OpenClassrooms">
+        <source>Formation Développeur Web Junior - OpenClassrooms</source>
+        <target>Junior Web Developer Training - OpenClassrooms</target>
+      </trans-unit>
+      <trans-unit id="zMduBqS" resname="Formation en ligne front-end et back-end dans laquelle l'apprentissage &quot;from scratch&quot; se fait sur les principaux langages : HTML, CSS, JavaScript, PHP et MySQL ainsi que le cms Wordpress.">
+        <source>Formation en ligne front-end et back-end dans laquelle l'apprentissage "from scratch" se fait sur les principaux langages : HTML, CSS, JavaScript, PHP et MySQL ainsi que le cms Wordpress.</source>
+        <target>Online front-end and back-end training in which learning "from scratch" takes place on the main languages: HTML, CSS, JavaScript, PHP and MySQL as well as cms Wordpress.</target>
+      </trans-unit>
+      <trans-unit id="DQsY_Li" resname="Baccalauréat gestion et comptabilité">
+        <source>Baccalauréat gestion et comptabilité</source>
+        <target>Bachelor's degree in management and accounting</target>
+      </trans-unit>
+      <trans-unit id="zOnAobl" resname="Mentions légales">
+        <source>Mentions légales</source>
+        <target>Legal disclaimer</target>
+      </trans-unit>
+      <trans-unit id="_HO33Mj" resname="Politique de confidentialité">
+        <source>Politique de confidentialité</source>
+        <target>Privacy policy</target>
+      </trans-unit>
+      <trans-unit id="VBAXIdx" resname="le coté front-end l'apprentissage des langages: HTML, CSS, JavaScript/jQuery incluant le framework Bootstrap">
+        <source>le coté front-end l'apprentissage des langages: HTML, CSS, JavaScript/jQuery incluant le framework Bootstrap</source>
+        <target>the front-end learning of languages: HTML, CSS, JavaScript/jQuery including the Bootstrap framework</target>
+      </trans-unit>
+      <trans-unit id="31BQgof" resname="le coté back-end l'apprentissage des langages: PHP orienté objet, MySQL/base de données et le framework Symfony">
+        <source>le coté back-end l'apprentissage des langages: PHP orienté objet, MySQL/base de données et le framework Symfony</source>
+        <target>the back-end learning languages: object-oriented PHP, MySQL/database and the Symfony framework</target>
+      </trans-unit>
+      <trans-unit id="_gOl29S" resname="la partie mobile l'apprentissage de REACT&lt;/p&gt;">
+        <source>la partie mobile l'apprentissage de REACT&lt;/p&gt;</source>
+        <target><![CDATA[the mobile part the learning of REACT</p>]]></target>
+      </trans-unit>
+      <trans-unit id="_8e_aDo" resname="Formations">
+        <source>Formations</source>
+        <target>Educations</target>
+      </trans-unit>
+      <trans-unit id="wNZkMTe" resname="Divers emplois">
+        <source>Divers emplois</source>
+        <target>Various jobs</target>
+      </trans-unit>
+      <trans-unit id="VAj_.xc" resname="Formation avec pour :">
+        <source>Formation avec pour :</source>
+        <target>Training with for :</target>
+      </trans-unit>
+      <trans-unit id="sNyQSre" resname="Salarié en entreprise. Vous pourrez retrouver en détail, mes différents poste dans mon">
+        <source>Salarié en entreprise. Vous pourrez retrouver en détail, mes différents poste dans mon</source>
+        <target>Salaried in companies. You can find details of my various positions in my</target>
       </trans-unit>
     </body>
   </file>

@@ -10,6 +10,7 @@ parameters:
     adresse_dev: '4 allée Alain Bashung'
     ville_dev: '91420 Morangis'
     mail_dev: 'stephen.germain@free.fr'
+    tel_dev: 0660977044
 
 services:
     # default configuration for services in *this* file
